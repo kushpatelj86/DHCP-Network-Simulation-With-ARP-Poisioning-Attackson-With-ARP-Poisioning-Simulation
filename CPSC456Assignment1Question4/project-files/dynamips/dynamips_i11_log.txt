@@ -1,0 +1,68 @@
+Feb 01 04:19:24.267 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Feb 01 04:19:24.267 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32891.
+Feb 01 04:19:24.276 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 01 04:19:24.277 HYPERVISOR: exec_cmd: hypervisor working_dir /home/kushpate125/GNS3/projects/CPSC456Assignment1Question4/project-files/dynamips 
+Feb 01 04:19:24.277 GENERAL: working_dir=/home/kushpate125/GNS3/projects/CPSC456Assignment1Question4/project-files/dynamips
+Feb 01 04:19:24.277 HYPERVISOR: exec_cmd: hypervisor working_dir /home/kushpate125/GNS3/projects/CPSC456Assignment1Question4/project-files/dynamips/69bbeb0e-c8f5-4d5f-911c-e353fca08762 
+Feb 01 04:19:24.277 GENERAL: working_dir=/home/kushpate125/GNS3/projects/CPSC456Assignment1Question4/project-files/dynamips/69bbeb0e-c8f5-4d5f-911c-e353fca08762
+Feb 01 04:19:24.277 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Feb 01 04:19:24.277 VM: VM R1 created.
+Feb 01 04:19:24.278 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5019 
+Feb 01 04:19:24.278 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Feb 01 04:19:24.278 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:24.278 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Feb 01 04:19:24.279 HYPERVISOR: exec_cmd: vm set_ios R1 /home/kushpate125/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Feb 01 04:19:24.279 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:24.279 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x62cc930c 
+Feb 01 04:19:24.279 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Feb 01 04:19:24.280 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Feb 01 04:19:24.280 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Feb 01 04:19:24.281 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:24.281 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Feb 01 04:19:24.281 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:24.281 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-2FE-TX 
+Feb 01 04:19:24.281 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:24.281 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 PA-2FE-TX 
+Feb 01 04:19:24.282 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:24.282 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 PA-2FE-TX 
+Feb 01 04:19:24.282 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:24.282 HYPERVISOR: exec_cmd: vm slot_add_binding R1 5 0 PA-2FE-TX 
+Feb 01 04:19:24.282 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:24.283 HYPERVISOR: exec_cmd: vm slot_add_binding R1 6 0 PA-2FE-TX 
+Feb 01 04:19:24.345 HYPERVISOR: exec_cmd: vm set_ios R1 /home/kushpate125/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Feb 01 04:19:25.656 HYPERVISOR: exec_cmd: vm set_ios R1 /home/kushpate125/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Feb 01 04:19:42.969 HYPERVISOR: exec_cmd: nio create_udp udp-ed4f50bf-b75e-4999-a7da-1f724f6e796f 10022 127.0.0.1 10023 
+Feb 01 04:19:43.182 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-ed4f50bf-b75e-4999-a7da-1f724f6e796f 
+Feb 01 04:19:43.183 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:49.019 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Feb 01 04:19:49.019 VM: VM Ghost created.
+Feb 01 04:19:49.020 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/kushpate125/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Feb 01 04:19:49.020 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 01 04:19:49.021 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/kushpate125/GNS3/projects/CPSC456Assignment1Question4/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Feb 01 04:19:49.021 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Feb 01 04:19:49.022 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 01 04:19:49.022 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Feb 01 04:19:49.022 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 01 04:19:49.321 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 01 04:19:49.322 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 01 04:19:49.482 VM: VM Ghost shutdown.
+Feb 01 04:19:49.483 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Feb 01 04:19:49.484 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 01 04:19:49.484 VM: VM Ghost destroyed.
+Feb 01 04:19:49.485 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Feb 01 04:19:49.485 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/kushpate125/GNS3/projects/CPSC456Assignment1Question4/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Feb 01 04:19:49.486 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:19:49.486 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Feb 01 04:19:49.486 HYPERVISOR: exec_cmd: vm start R1 
+Feb 01 04:20:19.706 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 01 04:40:37.667 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:40:37.668 HYPERVISOR: exec_cmd: vm stop R1 
+Feb 01 04:40:37.749 VM: VM R1 shutdown.
+Feb 01 04:40:37.749 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 01 04:40:42.180 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 01 04:40:42.180 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 01 04:40:42.181 HYPERVISOR: exec_cmd: vm delete R1 
+Feb 01 04:40:42.181 VM: VM R1 destroyed.
+Feb 01 04:40:42.182 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 01 04:40:42.402 HYPERVISOR: Stopped.
+Feb 01 04:40:42.402 GENERAL: reset done.
